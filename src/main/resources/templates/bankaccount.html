@@ -40,15 +40,15 @@
         </tr>
         </thead>
         <tbody>
-        <tr th:each="bankaccount : ${allBankAccount}">
-            <td th:text="${bankaccount.id}"></td>
-            <td th:text="${bankaccount.customerId}"></td>
-            <td th:text="${bankaccount.type}"></td>
-            <td th:text="${bankaccount.balance}"></td>
+        <tr th:each="account : ${bankaccounts}">
+            <td th:text="${account.id}"></td>
+            <td th:text="${account.customerId}"></td>
+            <td th:text="${account.type}"></td>
+            <td th:text="${account.balance}"></td>
         </tr>
         </tbody>
     </table>
 </div>
-
+.
 </body>
 </html>
